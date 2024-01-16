@@ -1,1 +1,1 @@
-export { default as WeatherApp } from './WeatherContainer';
+export {default as WeatherApp } from './weatherContainer';
