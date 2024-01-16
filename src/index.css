@@ -66,13 +66,21 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
-@import url('https://fonts.google.com/specimen/Outfit?query=outfit');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**/
+
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+/* @import url('https://fonts.google.com/specimen/Outfit?query=outfit'); */
 
 body {
   font-family: 'Outfit', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
