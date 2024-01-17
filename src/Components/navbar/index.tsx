@@ -1,7 +1,9 @@
-import { Navigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
-const Navigasi = (_path: string) => {
+const Navigasi = () => {
 
+    const Navigate = useNavigate();
+    
     return(
         <>
             <nav className="bg-gray-800">
