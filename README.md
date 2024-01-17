@@ -1,4 +1,4 @@
-You can visit my milestone-2-usman4li- react ts here: https://milestone-2-usman4li.almanit.site
+You can visit my milestone-2-usman4li- react ts here: https://milestone-2-usman4li-4lx5.vercel.app/
 ---
 # React + TypeScript + Vite
 
