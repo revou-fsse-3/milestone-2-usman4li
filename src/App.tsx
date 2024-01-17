@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css'
 import { Home, WeatherApp } from './containers';
 import Layout from './Layout/Layout';
@@ -12,10 +12,11 @@ function App () {
     <div className='app'>
       <BrowserRouter>
         <Routes>
-          <Route element={<Layout/>}/>
+          <Route element={<Layout />}>
             <Route path='/' element={<Home/>}/>
             <Route path='/page' element={<WeatherApp apiKey={apiKey}/>}/>
             <Route path='*' element={<h1>404</h1>}/>
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
