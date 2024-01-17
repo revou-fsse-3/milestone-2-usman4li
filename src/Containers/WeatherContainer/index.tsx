@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Input } from '../../components';
+import { Input } from '../../Components';
 
 interface WeatherAppProps {
   apiKey: string;

@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom"
-import { Navigasi } from "../components"
+import Navigasi from "../Components/Navigasi"
+
 
 const Layout = () => {
 

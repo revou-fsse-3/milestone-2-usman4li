@@ -1,10 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './index.css'
-import { Home, WeatherApp } from './containers';
+import './index.css';
+import { Home, WeatherApp } from './Containers';
 import Layout from './Layout/Layout';
-// import WeatherContainer from './containers/weatherContainer';
-
-
 
 function App () {
   const apiKey = '75d5132159c1a539c6a433e52d0094a1';
