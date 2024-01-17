@@ -1,5 +1,6 @@
+import { Navigate } from "react-router-dom"
 
-const Navigasi = () => {
+const Navigasi = (_path: string) => {
 
     return(
         <>
@@ -25,10 +26,8 @@ const Navigasi = () => {
                         <div className="hidden sm:ml-6 sm:block">
                         <div className="flex space-x-4">
 
-                            <a href="#" className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a>
-                            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</a>
-                            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projects</a>
-                            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Calendar</a>
+                        <button onClick={() => Navigate('/')} className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</button>
+                        <button onClick={() => Navigate('/page')}  className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Weather</button>
                         </div>
                         </div>
                     </div>
@@ -38,10 +37,8 @@ const Navigasi = () => {
                 <div className="sm:hidden" id="mobile-menu">
                     <div className="space-y-1 px-2 pb-3 pt-2">
 
-                    <button className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</button>
-                    <button className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</button>
-                    <button className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</button>
-                    <button className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</button>
+                    <button onClick={() => Navigate('/')} className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</button>
+                    <button onClick={() => Navigate('/page')}  className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Weather</button>
                     </div>
                 </div>
             </nav>

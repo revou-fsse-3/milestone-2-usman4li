@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.css'
-import WeatherContainer from './containers/weatherContainer';
 import { Navigasi } from './components';
+import { Home, WeatherApp } from './containers';
+// import WeatherContainer from './containers/weatherContainer';
 
 
 
@@ -13,7 +14,8 @@ function App () {
       <BrowserRouter>
         <Routes>
           <Route element={<Navigasi/>}/>
-            <Route path='/' element={<WeatherContainer apiKey={apiKey}/>}/>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/page' element={<WeatherApp apiKey={apiKey}/>}/>
             <Route path='*' element={<h1>404</h1>}/>
         </Routes>
       </BrowserRouter>
